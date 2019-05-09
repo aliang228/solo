@@ -163,6 +163,7 @@ docker pull b3log/solo
 * `--listen_port`：进程监听端口
 * `--server_scheme`：最终访问协议，如果反代服务启用了 HTTPS 这里也需要改为 `https`
 * `--server_host`：最终访问域名或公网 IP，不要带端口号
+* `--server_port`: 如果server_scheme为https且使用域名，不想地址中带端口号需要设置该值为`443`，同理http则需要设置为`80`
 
 完整启动参数的说明可以使用 `-h` 来查看。
 
